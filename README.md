@@ -1,42 +1,52 @@
-# 🔥 RoastMyCode-CLI
+# 🔥 RoastMyCode: The AI That Hates Your Code
 
-Use AI to absolutely destroy your code's self-esteem.
+**Turn your terminal into a comedy club where YOU are the punchline.**
 
-**RoastMyCode-CLI** is a terminal tool that reads your code, sends it to a cynical AI (Gemini), and prints a brutal, hilarious, and technically accurate roast of your programming skills.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Roast Level: Critical](https://img.shields.io/badge/Roast%20Level-Critical-red)](https://github.com/yourusername/RoastMyCode-CLI)
 
-## 📦 Installation
+Are you tired of polite code reviews like *"Maybe consider a slight refactor here :)"*?
+Do you secretly crave the validation of a grumpy Senior Engineer who has seen too much spaghetti?
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/RoastMyCode-CLI.git
-    cd RoastMyCode-CLI
-    ```
+**RoastMyCode-CLI** is here to hurt your feelings. Powered by Google's Gemini AI, it reads your code and delivers a **brutal, hilarious, and technically accurate** roast that will make you rethink your career choices.
 
-2.  Create a virtual environment and install dependencies:
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    ```
+---
 
-3.  Set up your API Key:
-    -   Get a key from [Google AI Studio](https://aistudio.google.com/).
-    -   Create a `.env` file:
-        ```bash
-        echo "GEMINI_API_KEY=your_api_key_here" > .env
-        ```
+## 🚀 Get Roasted in 30 Seconds
 
-## 🚀 Usage
-
-Run the tool on any file you dare:
+Stop debugging and start crying. Install via pip directly from GitHub:
 
 ```bash
-python main.py <file_path>
+pip install git+https://github.com/yourusername/RoastMyCode-CLI.git
 ```
 
-### Example
+## 🎮 How to Play
 
-**Input:** (`test_spaghetti.py`)
+### 1. The "I'm Brave" Mode
+Run it on your messiest file. We dare you.
+
+```bash
+roast my_spaghetti.py
+```
+
+### 2. The "What does this button do?" Mode
+Just type `roast` to see our beautiful help screen (and delay the inevitable).
+
+```bash
+roast
+```
+
+### 🔑 First Time Set Up
+The first time you run it, we'll ask for a **Gemini API Key**.
+> "Ugh, effort?"
+>
+> Don't worry, it's free. [Get one here](https://aistudio.google.com/app/apikey). We store it locally in `~/.roastmycode.env` so we don't have to ask you again (we know you'd forget it).
+
+---
+
+## 📸 Hall of Fame (Screenshots)
+
+**Input:**
 ```python
 def do_stuff(x, y):
     temp = x + y
@@ -44,15 +54,25 @@ def do_stuff(x, y):
         print("ok")
 ```
 
-**Output:**
+**RoastMyCode Output:**
+> "Oh look, a function named `do_stuff`. How descriptive. Did `function_that_does_things` consist of too many characters for your fingers? And `temp`? **TEMP**? What is this, 1998?
+>
+> That indentation level is deeper than your understanding of asynchronous programming. Honestly, reading this code makes me want to `sudo rm -rf /` my own existence."
 
-> ... "do_stuff." That’s the most descriptive function name since I named my 2008 startup "The Thing That Does Stuff." ... And what is this indentation pyramid? This isn't Python; it's an archeological dig. ...
+---
 
-## 🛠️ Tech Stack
--   **Python 3.9+**
--   **Typer** (CLI)
--   **Rich** (Terminal UI)
--   **Google Gemini API** (The Roaster)
+## 🛠️ Tech Stack (The Boring Part)
+
+-   **Python 3.9+**: Because we have standards (unlike your code).
+-   **Rich**: To make the abuse look pretty in your terminal.
+-   **Typer**: Because `argparse` is for cavemen.
+-   **Google Gemini**: The silicon brain that judges you.
 
 ## 📄 License
-MIT. Do whatever you want, your code probably leaks memory anyway.
+
+**MIT License**.
+Copy it. Fork it. Sell it. do whatever you want. Just don't blame us when you cry.
+
+---
+
+Made with 💔 by a developer who procrastinated on their actual work to build this.
