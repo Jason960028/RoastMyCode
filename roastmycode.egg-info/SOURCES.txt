@@ -1,0 +1,12 @@
+README.md
+setup.py
+roastmycode/__init__.py
+roastmycode/cli.py
+roastmycode/roaster.py
+roastmycode/ui.py
+roastmycode.egg-info/PKG-INFO
+roastmycode.egg-info/SOURCES.txt
+roastmycode.egg-info/dependency_links.txt
+roastmycode.egg-info/entry_points.txt
+roastmycode.egg-info/requires.txt
+roastmycode.egg-info/top_level.txt

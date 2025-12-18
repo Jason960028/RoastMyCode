@@ -1,0 +1,7 @@
+typer
+rich
+google-generativeai
+python-dotenv
+
+[:python_version < "3.10"]
+importlib-metadata
