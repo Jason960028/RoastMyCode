@@ -6,6 +6,7 @@ import os
 import sys
 from rich.prompt import Prompt
 from rich.console import Console
+from rich.panel import Panel
 
 # Suppress annoying warnings for clean CLI output
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -62,10 +63,25 @@ def ensure_api_key():
     return False
 
 @app.command()
-def main(file_path: str):
+def main(file_path: str = typer.Argument(None, help="Path to the code file you want to roast.")):
     """
     Roast the code in the specified file.
     """
+    # If no file provided, show the "How to Use" guide
+    if file_path is None:
+        print_welcome()
+        console.print(Panel(
+            "[bold green]Installation Complete![/bold green]\n\n"
+            "To roast a file, run:\n"
+            "  [cyan]roast <path_to_file>[/cyan]\n\n"
+            "Example:\n"
+            "  [cyan]roast main.py[/cyan]\n\n"
+            "[dim]First time? You'll be asked for your Gemini API key.[/dim]",
+            title="[bold blue]Welcome to RoastMyCode[/bold blue]",
+            border_style="blue"
+        ))
+        return
+
     if not ensure_api_key():
         print_error("API Key is required to proceed.")
         raise typer.Exit(code=1)
